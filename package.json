@@ -1,0 +1,8 @@
+{
+  "name": "VVT_Social",
+  "version": "1.0.0",
+  "description": "A mini social network for VVT péonal",
+  "main": "src/server.ts",
+  "author": "Vo Thang",
+  "license": "MIT"
+}
