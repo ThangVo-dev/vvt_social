@@ -20,3 +20,4 @@
 - git push -u origin master
 
 - tsc --init
+- test
