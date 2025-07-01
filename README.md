@@ -18,3 +18,5 @@
 - git config --global user.email youremail@domain.com
 - git remote add origin https://github.com/ThangVo-dev/vvt_cocial.git
 - git push -u origin master
+
+- tsc --init
