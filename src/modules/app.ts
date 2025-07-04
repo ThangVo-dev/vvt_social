@@ -28,8 +28,11 @@ class App {
 
   private async connectToDatabase() {
     try {
-      const connectionString =
-        "mongodb+srv://vothang2511:B5m8RVyynzdATcgp@master.kymxnvn.mongodb.net/vvt_social?retryWrites=true&w=majority&appName=Master";
+      const connectionString = process.env.MONGODB_URI;
+      if (!connectionString) {
+        console.log("Connection string is invalid");
+        return;
+      }
 
       await mongoose.connect(connectionString);
       console.log("Connected to the database successfully");
